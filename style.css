@@ -1,20 +1,21 @@
 :root {
     --color-gray-f: #ffffff;
-    --color-gray-1: #FBFBFB;
-    --color-gray-2: #EFEFEF;
-    --color-gray-3: #F8F8F8;
+    --color-gray-1: #fbfbfb;
+    --color-gray-2: #efefef;
+    --color-gray-3: #f8f8f8;
     --color-gray-0: #000000;
 
-    --color-blue-1: #088CE8;
-    --color-blue-2: #E4EDFD;
-  }
-  
+    --color-blue-1: #088ce8;
+    --color-blue-2: #e4edfd;
+}
+
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #ffffff;
 }
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 ul {
@@ -25,7 +26,7 @@ a {
     text-decoration: none;
     color: black;
 }
-.main-page {
+main {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -33,10 +34,21 @@ a {
     left: 0;
     display: flex;
     align-items: center;
-    align-content: center; 
-    justify-content: center; 
-    overflow: auto;   
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
 }
-.main-page__menu {
-
+section {
+    width: 500px;
+    padding: 1.25rem;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+}
+li {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+}
+li:hover {
+    background-color: #e4edfd;
 }
