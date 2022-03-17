@@ -1,11 +1,5 @@
-.Trashes
-.idea
-.vscode
-.github
+.idea/
 .cache
-.parcel-cache
-ehthumbs.db
-Thumbs.db
-_config.yml
 node_modules
 dist
+.parcel-cache
