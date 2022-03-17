@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PucheglazovaP/chat.git"
+    "url": "git+https://github.com/PucheglazovaP/middle.messenger.praktikum.yandex.git"
   },
   "author": "Polina Pucheglazova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PucheglazovaP/chat/issues"
+    "url": "https://github.com/PucheglazovaP/middle.messenger.praktikum.yandex/issues"
   },
-  "homepage": "https://github.com/PucheglazovaP/chat#readme",
+  "homepage": "https://github.com/PucheglazovaP/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.3.2",
     "parcel": "^2.3.2"
