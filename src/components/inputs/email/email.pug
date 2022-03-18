@@ -1,0 +1,14 @@
+mixin email(label, id, name, inputClass, labelClass, placeholder)
+    div.input
+        if label
+            label(
+                class=`input__label ${labelClass || ""}`
+                for=id
+                )= label
+        input(
+            type="email"
+            class=`input__field ${inputClass || ""}`
+            id=id
+            name=name
+            placeholder=placeholder
+        )

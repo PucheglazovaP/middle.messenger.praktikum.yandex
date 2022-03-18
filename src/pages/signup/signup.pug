@@ -1,0 +1,23 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+include ../../components/inputs/textbox/textbox.pug
+include ../../components/inputs/password/password.pug
+include ../../components/inputs/email/email.pug
+include ../../components/inputs/phone/phone.pug
+include ../../components/button/button.pug
+     
+block title
+    title='Sign up'
+block links
+    link(rel="stylesheet", href="signup.scss")
+
+block content
+    form.form
+        h1="Регистрация"
+        +textbox("Name", "first_name", "first_name", "mb-5")
+        +textbox("Surname", "second_name", "second_name", "mb-5")
+        +textbox("Login", "login", "login", "mb-5")
+        +email("Email", "email", "email", "mb-5")
+        +phone("Phone", "phone", "phone", "mb-5")
+        +password("Password", "password", "password", "mb-5")
+        +password("Пароль (еще раз)", "newPassword", "newPassword", "mb-5")
+        +button("submit", "Авторизоваться", "mt-30")

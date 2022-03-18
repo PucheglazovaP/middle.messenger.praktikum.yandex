@@ -1,0 +1,19 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+include ../../components/inputs/textbox/textbox.pug
+include ../../components/inputs/password/password.pug
+include ../../components/inputs/password/password.pug
+include ../../components/button/button.pug
+     
+block title
+    title='Login'
+block links
+    link(rel="stylesheet", href="login.scss")
+
+block content
+    section(class="login")
+        form.form
+            h1(class="form__title")="Вход"
+            +textbox("Логин", "login", "login", "mb-5")
+            +password("Пароль", "password", "password", "mb-5")
+            +button("submit", "Авторизоваться", "mt-30")
+        a(href="../signup/signup.pug" class="button form__button-signup")="Ты еще не с нами?"

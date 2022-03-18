@@ -1,0 +1,5 @@
+mixin button(type, text, className)
+    button(
+        type=type || "submit"
+        class=`button ${className || ''}`
+        )=text || "Text button"
