@@ -1,0 +1,20 @@
+.input {
+    &__wrapper {
+        position: relative;
+        text-align: left;
+    }
+    &__label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 9px;
+        line-height: 9px;
+        color: #999;
+    }
+    &__field {
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #3369f3;
+    }
+}

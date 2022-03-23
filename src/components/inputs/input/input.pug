@@ -1,5 +1,5 @@
 mixin input(obj)
-    div.input-wrapper(class=obj.inputWrapper ? obj.inputWrapper : '')
+    div.input__wrapper(class=obj.inputWrapper ? obj.inputWrapper : '')
         if obj.label
             label(
                 class=`input__label ${obj.labelClass || ""}`
