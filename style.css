@@ -59,6 +59,9 @@ a {
 li {
     padding: 0;
 }
+input:focus {
+    outline: none !important;
+}
 li:hover {
     background-color: #e4edfd;
 }
