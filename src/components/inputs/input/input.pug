@@ -1,0 +1,16 @@
+mixin input(obj)
+    div.input-wrapper(class=obj.inputWrapper ? obj.inputWrapper : '')
+        if obj.label
+            label(
+                class=`input__label ${obj.labelClass || ""}`
+                for=obj.id
+                )= obj.label
+        input(
+            type=obj.type ? obj.type : 'text'
+            class=`input__field ${obj.inputClass || ""}`
+            id=obj.id
+            name=obj.name
+            placeholder=obj.placeholder || ''
+            value=obj.value || ''
+            readonly=obj.readOnly
+        )
