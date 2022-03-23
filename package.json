@@ -15,6 +15,7 @@
       "source": [
         "./src/pages/login/login.pug",
         "./src/pages/signup/signup.pug",
+        "./src/pages/chat/chat.pug",
         "index.html"
       ],
       "distDir": "./dist"

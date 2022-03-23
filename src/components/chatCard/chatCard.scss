@@ -1,0 +1,64 @@
+@import "../../../static/styles/colors";
+.chat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 16px;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+
+  &__avatar {
+    margin-right: 10px;
+  }
+
+  &__content {
+    width: 100%;
+    text-align: left;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__time {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: $color-gray-5;
+  }
+
+  &__count {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #3369f3;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  &__image-wrapper {
+    position: relative;
+    max-width: 50px;
+    max-height: 50px;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+}
