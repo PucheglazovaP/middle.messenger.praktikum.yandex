@@ -37,6 +37,7 @@
     "parcel": "^2.3.2"
   },
   "dependencies": {
+    "express": "^4.17.3",
     "pug": "^3.0.2"
   }
 }
