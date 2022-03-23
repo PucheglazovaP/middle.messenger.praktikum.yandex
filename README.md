@@ -1,5 +1,6 @@
 ### Спринт 1 - Экраны
 - Прототип в фигме: [тык](https://www.figma.com/file/24EUnEHGEDNLdOcxg7ULwV/Chat?node-id=12%3A35)
+- Домен [тык](https://mellow-lamington-037a89.netlify.app/)
 ### Установка проекта
 - npm install — установка зависимостей,
 - npm run start — запуск express сервера,
