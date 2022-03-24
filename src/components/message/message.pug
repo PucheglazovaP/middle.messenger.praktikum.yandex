@@ -4,4 +4,4 @@ mixin message(obj)
         span.message__time(class=obj.isUser ? 'message__time--user' : '')
             if obj.isUser
                 span(class="message__icon message__icon--read")               
-            span.message__time-value=obj.time
+            time.message__time-value=obj.time

@@ -32,12 +32,12 @@
   },
   "homepage": "https://github.com/PucheglazovaP/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
-    "@parcel/transformer-pug": "^2.3.2",
-    "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2"
+    "@parcel/transformer-pug": "2.3.2",
+    "@parcel/transformer-sass": "2.3.2",
+    "parcel": "2.3.2"
   },
   "dependencies": {
-    "express": "^4.17.3",
-    "pug": "^3.0.2"
+    "express": "4.17.3",
+    "pug": "3.0.2"
   }
 }

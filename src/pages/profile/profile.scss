@@ -36,8 +36,8 @@
         height: 100%;
         align-items: center;
         justify-content: center;
-        background: #fbfbfb;
-        border-right: 1px solid #eaeaea;
+        background: $color-gray-1;
+        border-right: 1px solid $color-gray-4;
     }
     &__image {
         width: 130px;
@@ -82,7 +82,7 @@
         border: none;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        border-bottom: 1px solid #eaeaea;
+        border-bottom: 1px solid $color-gray-4;
         &-label {
             position: absolute;
             left: 0;
@@ -100,7 +100,7 @@
         font-size: 13px;
         text-align: left;
         border: none;
-        border-bottom: 1px solid #eaeaea;
+        border-bottom: 1px solid $color-gray-4;
         cursor: pointer;
         color: $color-blue-3;
         &--exit {
@@ -143,7 +143,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $color-gray-f;
     text-align: center;
     position: absolute;
     z-index: 2;

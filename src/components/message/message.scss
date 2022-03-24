@@ -22,12 +22,12 @@
       align-self: flex-end;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 0;
-      background: #e4edfd;
+      background: $color-blue-2;
     }
     &__icon--read {
         width: 11px;
         height: 5px;
-        color: #999;
+        color: $color-gray-5;
         background-image: url('../../../static/assets/svg/read-message.svg');
         background-repeat: no-repeat;
     }

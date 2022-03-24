@@ -26,8 +26,8 @@
   flex-shrink: 0;
   height: 100vh;
   overflow: hidden;
-  background: #fbfbfb;
-  border-right: 1px solid #eaeaea;
+  background: $color-gray-1;
+  border-right: 1px solid $color-gray-4;
   &__search {
     padding: 0 10px;
     margin-top: 15px;
@@ -158,7 +158,7 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $color-gray-4;
 
   &__attach-button {
     width: 32px;
@@ -215,7 +215,7 @@
     margin-right: 10px;
     flex-grow: 1;
     border: none;
-    background: #efefef;
+    background: $color-gray-4;
     border-radius: 30px;
 
     &::placeholder {

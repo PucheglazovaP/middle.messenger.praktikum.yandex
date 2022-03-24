@@ -1,3 +1,5 @@
+@import "../../../../static/styles/colors.scss";
+
 .input-container{
     position: relative;
     &__search-icon {
@@ -6,14 +8,14 @@
         position: absolute;
         left: 35%;
         top: 9px;
-        color: #999;
+        color: $color-gray-5;
         background-image: url('../../../static/assets/svg/search.svg');
         background-repeat: no-repeat;
     }
     &__search-field {
         width: 100%;
         height: 32px;
-        background: #efefef;
+        background: $color-gray-2;
         border-radius: 5px;
         border: none;
         text-align: center;
