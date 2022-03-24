@@ -1,0 +1,62 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+include ../../components/chatCard/chatCard.pug
+include ../../components/inputs/search/search.pug
+include ../../components/button/button.pug
+include ../../components/message/message.pug
+
+block title
+    title='Chat'
+block links
+    link(rel="stylesheet" href="chat.scss")
+block content
+    main.chat__container
+        section.sidebar
+            nav.sidebar__nav
+                a(class="sidebar__nav-link" href="../profile/profile.pug") Профиль
+                    span(class="sidebar__nav-icon")
+            div.sidebar__search
+                +search("search", "search",  "search", "input-search", "Поиск")
+            ul.chat__list
+                +chatCard("Андрей", "Привет", "2", "10:49")
+                +chatCard("Андрей", "Привет", "2", "12:00")
+                +chatCard("Илья", "Друзья, у меня для вас особенный выпуск новостей!...", "2", "15:12")
+                +chatCard("Вадим", "Привет", "2", "Пт")
+                +chatCard("Андрей", "Привет", "2", "Ср")
+                +chatCard("Андрей", "Привет", "2", "Пн")
+                +chatCard("Андрей", "Привет", "2", "Пн")
+                +chatCard("Андрей", "Привет", "2", "Пн")
+                +chatCard("Андрей", "Привет", "2", "Пн")
+        section.chat-content
+            section.header
+                div.header__user
+                    img(class="header__avatar" src='../../../static/assets/img/avatar-no-photo.jpg')
+                    span(class="header__author-name") Пользователь
+                div.header__options
+                    button(type="button" class="header__options-button" alt="options")
+                        span(class="header__options-icon")
+            section.chat
+                time(class="chat__time")="19 июня"
+                div.chat__container
+                    div(class="chat__messages")
+                        +message({
+                            isUser: false,
+                            message: "Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL",
+                            time: "11:56",
+                    })
+                        +message({
+                            isUser: false,
+                            message: "и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро",
+                            time: "11:57",
+                    })
+                        +message({
+                            isUser: true,
+                            message: "Ок",
+                            time: "12:57",
+                    })
+            section.bottom-panel
+                button(type="button",  class="bottom-panel__attach-button")
+                    span(class="bottom-panel__attach-icon")
+                form(class='form-message' id="form")
+                    textarea(class="bottom-panel__textbox" wrap="hard" cols="2" id="message" placeholder="Сообщение")
+                    button(type="submit", class="bottom-panel__submit-button")
+                        span(class="bottom-panel__submit-icon")

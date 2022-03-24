@@ -1,0 +1,13 @@
+@import "../../../static/styles/colors";
+.button {
+    width: 100%;
+    line-height: 13px;
+    padding: 12px 0;
+    background: $color-blue-3;
+    border-radius: 8px;
+    text-align: center;
+    color: $color-gray-f;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}

@@ -1,0 +1,12 @@
+mixin chatCard(authorName, textMessage, messageCount, time)
+    li.chat-card
+        .chat-card__image-wrapper 
+            img.chat-card__image(src="../../../static/assets/img/avatar-no-photo.jpg")
+        div.chat-card__content
+            h3(class="chat-card__name")=authorName
+            if textMessage
+                p(class="chat-card__text")=textMessage
+        div.chat-card__info
+            p(class="chat-card__time")=time
+            if messageCount
+                span(class="chat-card__count")=messageCount

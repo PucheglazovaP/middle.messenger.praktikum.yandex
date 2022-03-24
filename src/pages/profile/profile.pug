@@ -1,0 +1,80 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+include ../../components/inputs/input/input.pug
+
+block title
+    title='Профиль'
+block links
+    link(rel="stylesheet" href="profile.scss")
+block content
+    .profile
+        .profile__sidebar
+            a(href="../chat/chat.pug" class="profile__link-back")
+                span(class="profile__link-back-icon")
+        .profile__wrapper
+            .profile__container
+                .profile__avatar
+                    span(class="profile__image-edit-text") Поменять аватар
+                    img(src='../../../static/assets/img/avatar-no-photo.jpg' alt="Аватар юзера")
+                h1(class="profile__title profile__title--hidden") Профиль
+                h2.profile__name Иван
+                form.profile__form(action='#')
+                    .profile__inputs
+                        +input({
+                        label: "Почта", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-1",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        type: "mail",
+                        name:"email", 
+                        value:"pochta@yandex.ru" })
+                        +input({
+                        label: "Логин", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-2",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        name:"login", 
+                        value:"ivanivanov" })
+                        +input({
+                        label: "Имя", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-3",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        name:"user-name", 
+                        value:'Иван' })
+                        +input({
+                        label: "Фамилия", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-4",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        name:"user-second-name", 
+                        value:'Иванов' })
+                        +input({
+                        label: "Имя в чате", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-5",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        name:"user-second-name", 
+                        value:'Иван' })
+                        +input({
+                        label: "Телефон", 
+                        inputWrapper: "profile__input-wrapper", 
+                        id:"input-5",
+                        labelClass:"profile__input-label",
+                        inputClass: "profile__input",
+                        readOnly: true,
+                        name:"tel", 
+                        value:'+7 (909) 967 30 30' })
+                .profile__buttons
+                    a(href="#" class="profile__link") Изменить данные
+                    a(href="#" class="profile__link") Изменить пароль
+                    a(href="../chat/chat.pug" class="profile__link profile__link--exit") Выйти

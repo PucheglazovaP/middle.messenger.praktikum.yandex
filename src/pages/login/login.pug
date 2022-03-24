@@ -1,0 +1,29 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+include ../../components/inputs/input/input.pug
+include ../../components/button/button.pug
+
+block title
+    title='Login'
+block links
+    link(rel="stylesheet" href="login.scss")
+
+block content
+    section(class="login")
+        form.login__form
+            h1(class="form__title")="Вход"
+            +input({
+                label: "Логин", 
+                id:"input-1",
+                name:"login",
+                value: "ivanivanov",
+                inputWrapper: "form__input" })
+            +input({
+                label: "Пароль", 
+                id:"input-2",
+                name:"password",
+                value: "ivanivanov",
+                type: "password",
+                inputWrapper: "form__input" })
+            .form__links
+                +button("submit",'form__button' , "Авторизоваться")
+                a(href="../signup/signup.pug" class="form__link")="Ты еще не с нами?"

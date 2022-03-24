@@ -1,0 +1,7 @@
+mixin message(obj)
+    div.message(class=obj.isUser ? 'message--user' : '')
+        p.message__text=obj.message
+        span.message__time(class=obj.isUser ? 'message__time--user' : '')
+            if obj.isUser
+                span(class="message__icon message__icon--read")               
+            time.message__time-value=obj.time

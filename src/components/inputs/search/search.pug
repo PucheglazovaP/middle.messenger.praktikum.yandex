@@ -1,0 +1,10 @@
+mixin search(id, name, inputClass, inputContainerClass, placeholder)
+    div(class=`input-container ${inputContainerClass || ""}`)
+        span(class="input-container__search-icon")
+        input(
+            type="search"
+            class=`input__field input-container__search-field ${inputClass || ""}`
+            id=id
+            name=name
+            placeholder=placeholder
+        )

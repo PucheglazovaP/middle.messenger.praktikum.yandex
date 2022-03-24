@@ -1,0 +1,14 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+
+block title
+    title='404'
+block links
+    link(rel="stylesheet", href="404.scss")
+
+block content
+    section.error
+        .error__wrapper
+            h1.error__title 404
+            h2.error__subtitle Не туда попали
+            a(href="../chat/chat.pug" class="error__link")
+                span(class="error__link-text")="Назад к чатам"

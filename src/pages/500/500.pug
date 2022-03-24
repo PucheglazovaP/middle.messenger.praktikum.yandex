@@ -1,0 +1,14 @@
+extends ../../components/htmlHeader/htmlHeader.pug
+
+block title
+    title='500'
+block links
+    link(rel="stylesheet", href="500.scss")
+
+block content
+    section.error
+        .error__wrapper
+            h1.error__title 500
+            h2.error__subtitle Мы уже фиксим
+            a(href="../chat/chat.pug" class="error__link")
+                span(class="error__link-text")="Назад к чатам"
