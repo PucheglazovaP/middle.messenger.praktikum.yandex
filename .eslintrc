@@ -12,13 +12,13 @@
     ],
     "parser": "@typescript-eslint/parser",
     "plugins": [
-        "prettier",
         "import",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
         "prettier/prettier": "error",
-        "no-console": "off",
+        "no-console": "warn",
         "no-restricted-syntax": [
             "error",
             "ForInStatement",
